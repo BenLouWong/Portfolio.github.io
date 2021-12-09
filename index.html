@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Benjamin Lou-Wong | Front-End Engineer & Designer</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="sass/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="sidebar">
+				<div class="menu">
+					<a href="#" class="menu menu__btn" id="menu__hamburger">
+						<span class="menu__hamburger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</span>
+					</a>
+				</div>
+				<ul class="nav">
+					<li class="nav__link">
+						<a href="#section01" class="nav__btn nav__btn--home">
+							<ion-icon
+								name="home-outline"
+								class="nav__icon"
+							></ion-icon>
+							Home
+						</a>
+					</li>
+					<li class="nav__link">
+						<a href="#section02" class="nav__btn nav__btn--work">
+							<ion-icon
+								name="desktop-outline"
+								class="nav__icon"
+							></ion-icon>
+							Work
+						</a>
+					</li>
+					<li class="nav__link">
+						<a href="#section03" class="nav__btn nav__btn--about">
+							<ion-icon
+								name="happy-outline"
+								class="nav__icon"
+							></ion-icon>
+							About Me
+						</a>
+					</li>
+					<li class="nav__link">
+						<a href="#section04" class="nav__btn nav__btn--contact">
+							<ion-icon
+								name="chatbox-outline"
+								class="nav__icon"
+							></ion-icon>
+							Contact Me
+						</a>
+					</li>
+				</ul>
+			</div>
+			<canvas id="canvas"></canvas>
+			<div class="loader loader__container">
+				<div class="loader__anim">
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+				</div>
+			</div>
+		</header>
+		<main class="containerFullPage">
+			<section
+				class="section01 flex flex__ai-center flex__jc-center"
+				id="section01"
+			>
+				<div
+					class="
+						hero hero__heading hero__heading--container01
+						flex flex__dir-col
+					"
+				>
+					<h1 class="heading-1 heading-1--cont typing">
+						Hi! I’m <span class="heading__colour--1">Benjamin</span>
+					</h1>
+					<h3 class="heading-4 heading-4--wrapper01 moveUp">
+						Interactive Front-end Developer and Designer
+					</h3>
+					<h3 class="heading-4 heading-4--wrapper02 moveUp">
+						Passionate about creating unique and engaging user
+						experiences
+					</h3>
+					<button class="btn btn__01 moveUp" id="btnAbout">
+						About me
+					</button>
+				</div>
+				<div
+					class="
+						hero hero__photo hero__photo--01
+						flex flex__ai-center flex__jc-center
+					"
+				>
+					<img src="images/IMG_4892-min.JPG" alt="Ben Photo" />
+				</div>
+			</section>
+			<section class="section02 work" id="section02">
+				<div class="hero hero__heading hero__heading--container02">
+					<h1 class="heading-1">
+						My <span class="heading__colour--1">Work</span>
+					</h1>
+					<h3 class="heading-4 heading-4--wrapper01">
+						The Greatest Hits of my latest work and projects
+					</h3>
+					<h3 class="heading-4 heading-4--wrapper02">
+						Click on the images to learn more!
+					</h3>
+				</div>
+
+				<!-- Surgery -->
+				<div class="ball__container">
+					<a href="#" class="workBall workBall__1" data-btn="1">
+						<div class="workBall__1-inside flex">
+							<img
+								src="images/surgeryCont.jpg"
+								alt="photoTest "
+							/>
+						</div>
+						<div class="workBall__insideText flex">
+							Canberra Paediatric Dentistry
+						</div>
+					</a>
+					<div class="work__overlay--text work__overlay--text-1">
+						<a href="#" class="close close__1">
+							<ion-icon
+								name="arrow-back-outline"
+								class="btnClose"
+							></ion-icon>
+						</a>
+						<section
+							class="
+								overlay__section overlay__section--01
+								slide01
+							"
+						>
+							<div class="overlay__photo">
+								<img
+									src="images/surgeryHero.jpg"
+									alt="Example photo"
+								/>
+							</div>
+							<div class="overlay__container">
+								<h2
+									class="overlay overlay__heading02 heading-4"
+								>
+									Dentistry for the infant, child, adolescent
+									& those with special needs
+								</h2>
+								<h1 class="overlay overlay__heading heading-1">
+									Canberra Paediatric Dentistry
+								</h1>
+								<div class="overlay__btn">
+									<button class="btn btn__overlay">
+										Scroll Down
+									</button>
+								</div>
+								<div class="overlay__titles">
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Role
+										</div>
+										<div class="overlay__box title">
+											Front-End Developer & Engineer
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Project
+										</div>
+										<div class="overlay__box title">
+											UI & UX Design, Website Development
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Period
+										</div>
+										<div class="overlay__box title">
+											September 2021
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="
+								overlay__section overlay__section--02
+								grid
+								dentIntro
+							"
+						>
+							<div class="overlay__section--right">
+								<h1
+									class="
+										heading-2
+										overlay__section--heading
+										overlay__section--heading-border01
+									"
+								>
+									<span class="heading__colour--1">01. </span>
+									Overview
+								</h1>
+								<div class="overlay__section--right--text">
+									Since 1992, Canberra Paediatric Dentistry
+									has been providing Specialist Paediatric
+									Dental services in the ACT and surrounding
+									NSW regions for almost 30 years. In this
+									time, Canberra Paediatric Dentistry has
+									established itself as a well known, reliable
+									and friendly face for locals and regulars,
+									providing oral care to the likes of
+									children, teenagers, and those with special
+									needs
+								</div>
+							</div>
+						</section>
+						<section
+							class="overlay__section overlay__section--03 grid"
+						>
+							<div class="overlay__section--left">
+								<img
+									src="images/lissete-laverde-7_9t0gAms20-unsplash.jpg"
+									alt="photo"
+								/>
+							</div>
+							<div class="overlay__section--right">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>02.
+										</span>
+										Our Goal
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											Our task was a complete overhaul and
+											redesign of dated, existing website
+											architecture. The end goal was to
+											provide a website that was modern,
+											user-friendly, as well as device
+											friendly.To that end, I adopted the
+											use of advanced CSS techniques such
+											as CSS grid and flexbox. Website
+											functionality was done using Vanilla
+											Javascript
+										</p>
+									</div>
+								</div>
+								<div>
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>03.
+										</span>
+										User Story
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											Once on the website, the user will
+											land on a homepage that summarises
+											the overall information of our
+											clients services and relevant
+											information. From there, users are
+											provided with the option to explore
+											the website as they want
+										</p>
+										<br />
+										<p>
+											Designed to create a seamless user
+											experience, users have the ability
+											to select different tabs and
+											components that will provide them
+											with more indepth knowledge and
+											prepare them and their child for any
+											upcoming treatments.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="overlay__section overlay__section--03">
+							<div class="slider">
+								<div class="slider__container">
+									<img
+										src="images/CPDHero.png"
+										alt="Photo 1"
+									/>
+								</div>
+								<div class="slider__container">
+									<img
+										src="images/CPDHome05.png"
+										alt="Photo 3"
+									/>
+								</div>
+								<div class="slider__container grid">
+									<img
+										src="images/CPDHome01.png"
+										alt=""
+									/><img src="images/CPDHome02.png" alt="" />
+								</div>
+
+								<div class="slider__container">
+									<img
+										src="images/CPDMob01 (1).png"
+										alt="Photo 4"
+									/>
+									<img
+										src="images/CPDMob01 (2).png"
+										alt="Photo 4"
+									/>
+									<img
+										src="images/CPDMob01 (3).png"
+										alt="Photo 4"
+									/>
+									<img
+										src="images/CPDMob01 (4).png"
+										alt="Photo 4"
+									/>
+								</div>
+							</div>
+
+							<button class="slider__btn slider__btn--left">
+								<ion-icon name="arrow-back-outline"></ion-icon>
+							</button>
+							<button class="slider__btn slider__btn--right">
+								<ion-icon
+									name="arrow-forward-outline"
+								></ion-icon>
+							</button>
+						</section>
+
+						<section
+							class="overlay__section overlay__section--04 grid"
+						>
+							<div class="overlay__section--right">
+								<h1
+									class="
+										heading-2
+										overlay__section--heading
+										overlay__section--heading-border02
+									"
+								>
+									<span class="heading__colour--1">04. </span>
+									Create
+								</h1>
+								<p>
+									In this project, I acted as the Front-end
+									developer and UI/UX Designer. I was
+									responsible for the creative and interactive
+									direction of the website. Technologies used
+									for this website:
+								</p>
+								<div
+									class="
+										create__icons
+										flex flex__jc-center flex__ai-center
+									"
+								>
+									<ion-icon
+										name="logo-figma"
+										class="create__icon"
+									></ion-icon>
+									<ion-icon
+										name="logo-html5"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-css3"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-javascript"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-sass"
+										class="create__icon"
+									></ion-icon>
+									<ion-icon
+										name="logo-firebase"
+										class="create__icon"
+									></ion-icon>
+								</div>
+							</div>
+						</section>
+						<section
+							class="overlay__section overlay__section--05 grid"
+						>
+							<div class="overlay__section--left">
+								<img
+									src="https://images.unsplash.com/photo-1634082980789-f93655ed39d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRvb3RoYnJ1c2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+									alt="photo"
+								/>
+							</div>
+							<div class="overlay__section--right">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--4"
+											>05.
+										</span>
+										Website
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											This project was completed over the
+											course of 3 months, from conception
+											to deployment. We used Google
+											Firebase to deploy this website.
+											Check out the live version here!
+										</p>
+
+										<br />
+										<div>
+											<a href="#" class="btn btn__01"
+												>View Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<!-- Future Travel Budgeting Webapp -->
+				<div class="ball__container">
+					<button class="workBall workBall__2" data-btn="2">
+						<div class="workBall__2-inside flex">
+							<img src="images/travelCont.jpg" alt="photoTest" />
+						</div>
+						<div class="workBall__insideText flex">Travelix</div>
+					</button>
+					<div class="work__overlay--text work__overlay--text-2">
+						<a href="#" class="close close__2">
+							<ion-icon
+								name="arrow-back-outline"
+								class="btnClose"
+							></ion-icon>
+						</a>
+						<section
+							class="
+								overlay__section overlay__section--01
+								slide01
+							"
+						>
+							<div class="overlay__photo">
+								<img
+									src="https://images.unsplash.com/photo-1632836986357-09388f7465e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+									alt="Example photo"
+								/>
+							</div>
+							<div class="overlay__container">
+								<h2
+									class="overlay overlay__heading02 heading-4"
+								>
+									Travel Budgeting Made Easy
+								</h2>
+								<h1 class="overlay overlay__heading heading-1">
+									Travelix - Coming Soon!
+								</h1>
+								<div class="overlay__btn">
+									<button class="btn btn__overlay">
+										Scroll Down
+									</button>
+								</div>
+								<div class="overlay__titles">
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Role
+										</div>
+										<div class="overlay__box title">
+											TBC
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Project
+										</div>
+										<div class="overlay__box title">
+											TBC
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Period
+										</div>
+										<div class="overlay__box title">
+											TBC
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- <section
+							class="
+								overlay__section overlay__section--02
+								slide02
+							"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Nisi minus quaerat fugiat quidem? Repudiandae
+							iusto a blanditiis perferendis doloremque vitae
+							earum qui adipisci architecto, magni excepturi
+							dolores natus quas facilis.
+						</section>
+						<section
+							class="
+								overlay__section overlay__section--03
+								slide02
+							"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Doloremque perspiciatis, ullam fuga modi iste
+							voluptatum repellat, iusto excepturi voluptatibus a,
+							explicabo quam molestiae quod debitis natus minima
+							quisquam accusamus ipsam.
+						</section> -->
+					</div>
+				</div>
+
+				<!-- Hanasaki Japan -->
+				<div class="ball__container">
+					<button class="workBall workBall__4" data-btn="4">
+						<div class="workBall__4-inside flex">
+							<img
+								src="https://images.unsplash.com/photo-1601823984263-b87b59798b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGphcGFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+								alt="photoTest"
+							/>
+						</div>
+						<div class="workBall__insideText flex">
+							Hanasaki Japan
+						</div>
+					</button>
+					<div class="work__overlay--text work__overlay--text-4">
+						<a href="#" class="close close__4">
+							<ion-icon
+								name="arrow-back-outline"
+								class="btnClose"
+							></ion-icon>
+						</a>
+						<section
+							class="
+								overlay__section overlay__section--01
+								slide01
+							"
+						>
+							<div class="overlay__photo">
+								<img
+									src="https://images.unsplash.com/photo-1522383225653-ed111181a951?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+									alt="Example photo"
+								/>
+							</div>
+							<div class="overlay__container">
+								<h2
+									class="overlay overlay__heading02 heading-4"
+								>
+									Culture, Education and Food
+								</h2>
+								<h1 class="overlay overlay__heading heading-1">
+									Hanasaki Japan
+								</h1>
+								<div class="overlay__btn">
+									<button class="btn btn__overlay">
+										Scroll Down
+									</button>
+								</div>
+								<div class="overlay__titles">
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Role
+										</div>
+										<div class="overlay__box title">
+											UI / UX Designer
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Project
+										</div>
+										<div class="overlay__box title">
+											Travel & Digital Learning
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Period
+										</div>
+										<div class="overlay__box title">
+											December 2021
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="
+								overlay__section overlay__section--02
+								grid
+								japanIntro
+							"
+						>
+							<div class="overlay__section--right">
+								<h1
+									class="
+										heading-2
+										overlay__section--heading
+										overlay__section--heading-border01
+									"
+								>
+									<span class="heading__colour--1">01. </span>
+									Overview
+								</h1>
+								<div class="overlay__section--right--text">
+									Designed to provide a modern user
+									experience, Hanasaki Japan is a travel blog
+									with an empahsis on online Japanese learning
+									and providing users with local
+									recommendations. Users are able to send
+									emails directly using an online email form
+									and have the option to subscribe to a weekly
+									newsletter.
+								</div>
+							</div>
+						</section>
+						<section
+							class="
+								overlay__section
+								overlay__section--03
+								overlay__section--03-coffee
+								grid
+							"
+						>
+							<div
+								class="
+									overlay__section--left
+									overlay__section--left-coffee
+								"
+							>
+								<video
+									src="images/▶_Mockups_-_Hanasaki_Japan_—_Mozilla_Firefox_2021-12-09_08-12-52_SparkVideo.mp4"
+									autoplay
+									muted
+									loop
+								></video>
+							</div>
+							<div class="overlay__section--right whiteText">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>02.
+										</span>
+										Our Goal
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											My goal was to provide a design that
+											seamlessly integrated a modern
+											minimalist design with feature rich
+											components. The prototype including
+											all sections, pages and components
+											was made in Figma and took about 3
+											days to complete.
+										</p>
+									</div>
+								</div>
+								<div>
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>03.
+										</span>
+										User Story
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											This was designed with a
+											mobile-first mindset as requested by
+											the client. The mockup starts off at
+											the initial landing page and is
+											presented with a snippet of
+											information for the rest of the
+											website. The colour scheme of red
+											and blue are used to create a
+											modern, calming illustration feel.
+											Red has been adopted for buttons and
+											to draw attention to the user. Users
+											should be able to transition
+											smoothly between pages and select
+											options without having to navigate
+											to the hamburger menu.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="overlay__section overlay__section--05 grid"
+						>
+							<div class="overlay__section--left">
+								<img
+									src="https://images.unsplash.com/photo-1601823984263-b87b59798b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+									alt="photo"
+								/>
+							</div>
+							<div class="overlay__section--right">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--4"
+											>04.
+										</span>
+										Prototype
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											Interested in the design? Click on
+											the link below for the figma
+											prototype:
+										</p>
+
+										<br />
+										<div>
+											<a
+												href="https://www.figma.com/proto/Nma9S0ePHH3J5IMIEOHbg0/Hanasaki-Japan?node-id=83%3A69&scaling=scale-down&page-id=83%3A68&starting-point-node-id=83%3A69"
+												class="btn btn__01"
+												>View Prototype</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<!-- Coffee Project -->
+				<div class="ball__container">
+					<button class="workBall workBall__3" data-btn="3">
+						<div class="workBall__3-inside flex">
+							<img
+								src="https://images.unsplash.com/photo-1518057111178-44a106bad636?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80"
+								alt="photoTest"
+							/>
+						</div>
+						<div class="workBall__insideText flex">
+							The Coffee Project
+						</div>
+					</button>
+					<div class="work__overlay--text work__overlay--text-3">
+						<a href="#" class="close close__3">
+							<ion-icon
+								name="arrow-back-outline"
+								class="btnClose"
+							></ion-icon>
+						</a>
+						<section
+							class="
+								overlay__section overlay__section--01
+								slide01
+							"
+						>
+							<div class="overlay__photo">
+								<img
+									src="https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+									alt="Example photo"
+								/>
+							</div>
+							<div class="overlay__container">
+								<h2
+									class="overlay overlay__heading02 heading-4"
+								>
+									Nothing except quality coffee
+									recommendations
+								</h2>
+								<h1 class="overlay overlay__heading heading-1">
+									The Coffee Project
+								</h1>
+								<div class="overlay__btn">
+									<button class="btn btn__overlay">
+										Scroll Down
+									</button>
+								</div>
+								<div class="overlay__titles">
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Role
+										</div>
+										<div class="overlay__box title">
+											Front-End Developer & Engineer
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Project
+										</div>
+										<div class="overlay__box title">
+											UI & UX Design, Website Development
+										</div>
+									</div>
+									<div class="overlay__titles--box">
+										<div class="overlay__box role">
+											Period
+										</div>
+										<div class="overlay__box title">
+											November,2021
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section
+							class="
+								overlay__section overlay__section--02
+								grid
+								coffeeIntro
+							"
+						>
+							<div class="overlay__section--right">
+								<h1
+									class="
+										heading-2
+										overlay__section--heading
+										overlay__section--heading-border01
+									"
+								>
+									<span class="heading__colour--1">01. </span>
+									Overview
+								</h1>
+								<div class="overlay__section--right--text">
+									Developed as a passion project, The Coffee
+									Project is an advanced vanilla javascript
+									web application that uses Geolocation, AJAX,
+									Mapbox and Swiper.js to take the users
+									location and give them hand curated coffee
+									spot / cafe recommendations from their
+									surroundings. Utilising local storage, the
+									user then can save any coffee spot they wish
+									into a favourites list so they can keep
+									visiting their favourite again and again!
+									Only available in Sydney, Australia.
+								</div>
+							</div>
+						</section>
+						<section
+							class="
+								overlay__section
+								overlay__section--03
+								overlay__section--03-coffee
+								grid
+							"
+						>
+							<div
+								class="
+									overlay__section--left
+									overlay__section--left-coffee
+								"
+							>
+								<video
+									src="images/▶_Mockup_-_Coffee_Project_—_Mozilla_Firefox_2021-10-29_07-34-19_SparkVideo.mp4"
+									autoplay
+									muted
+									loop
+								></video>
+							</div>
+							<div class="overlay__section--right whiteText">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>02.
+										</span>
+										Our Goal
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											My goal was to provide a seamless
+											web application with modern language
+											and coding architecture, as well as
+											create a user experience that would
+											be enjoyable and practical.
+										</p>
+									</div>
+								</div>
+								<div>
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--1"
+											>03.
+										</span>
+										User Story
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											Inspired by the likes of Airbnb,
+											Broadsheet and Google Maps, The
+											Coffee Project has been developed to
+											provide a seamless user experience.
+										</p>
+										<br />
+										<p>
+											Once on the homepage, the user is
+											presented with homepage with a title
+											and a "Get Started" button. This
+											button will only work if location
+											services are enabled on that persons
+											device. Once done, they will be
+											taken to a main page which is a
+											presentation of the Mapbox API,
+											where they will be presented with
+											the different cafe locations on the
+											map as well as a small title card at
+											the bottom of the screen that gives
+											them the option to "Get Directions"
+											from their current position, "Add to
+											List", or read more into the cafe,
+											whereby a small description of the
+											cafe will popup from the bottom.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="overlay__section overlay__section--04 grid"
+						>
+							<div class="overlay__section--right">
+								<h1
+									class="
+										heading-2
+										overlay__section--heading
+										overlay__section--heading-border02
+									"
+								>
+									<span class="heading__colour--1">04. </span>
+									Create
+								</h1>
+								<p>
+									Technologies involved in the creation of
+									this project include:
+								</p>
+								<div
+									class="
+										create__icons
+										flex flex__jc-center flex__ai-center
+									"
+								>
+									<ion-icon
+										name="logo-html5"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-css3"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-javascript"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-sass"
+										class="create__icon"
+									></ion-icon
+									><ion-icon
+										name="logo-figma"
+										class="create__icon"
+									></ion-icon>
+									<span
+										class="
+											create__icon create__icon--mapbox
+										"
+										><img
+											src="images/Mapbox_logo_2019.svg"
+											alt="mapbox"
+									/></span>
+								</div>
+							</div>
+						</section>
+						<section
+							class="overlay__section overlay__section--05 grid"
+						>
+							<div class="overlay__section--left">
+								<img
+									src="https://images.unsplash.com/photo-1583165278997-0250ea5d72e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+									alt="photo"
+								/>
+							</div>
+							<div class="overlay__section--right">
+								<div class="overlay__text">
+									<h1
+										class="
+											heading-2
+											overlay__section--heading
+											overlay__section--heading-border02
+										"
+									>
+										<span class="heading__colour--4"
+											>05.
+										</span>
+										Website
+									</h1>
+									<div class="overlay__section--right--text">
+										<p>
+											Website is undergoing construction.
+											Come back later!
+										</p>
+
+										<br />
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section class="section03 about" id="section03">
+				<div class="about__container about__container--01">
+					<div class="about__chevron">
+						<ion-icon name="chevron-back-outline"></ion-icon>
+					</div>
+					<div class="skills__title">
+						<h1 class="heading-1">
+							My <span class="heading__colour--4">Skills</span>
+						</h1>
+					</div>
+					<div class="skills">
+						<div class="skill__container">
+							<div class="skill skill__01">
+								<ion-icon
+									name="logo-html5"
+									class="skill__icon"
+								></ion-icon>
+								<h2 class="heading-4 skill__title">HTML5</h2>
+							</div>
+							<div class="skill__bar skill__bar--1">
+								<div
+									class="skill__bar--fill skill__bar--fill--1"
+									data-percent="90"
+								></div>
+							</div>
+						</div>
+						<div class="skill__container">
+							<div class="skill skill__02">
+								<ion-icon
+									name="logo-css3"
+									class="skill__icon"
+								></ion-icon>
+								<h2 class="heading-4 skill__title">CSS3</h2>
+							</div>
+							<div class="skill__bar skill__bar--2">
+								<div
+									class="skill__bar--fill skill__bar--fill--2"
+									data-percent="90"
+								></div>
+							</div>
+						</div>
+						<div class="skill__container">
+							<div class="skill skill__03">
+								<ion-icon
+									name="logo-javascript"
+									class="skill__icon"
+								></ion-icon>
+								<h2 class="heading-4 skill__title">
+									Javascript
+								</h2>
+							</div>
+							<div class="skill__bar skill__bar--3">
+								<div
+									class="skill__bar--fill skill__bar--fill--3"
+									data-percent="60"
+								></div>
+							</div>
+						</div>
+						<div class="skill__container">
+							<div class="skill skill__04">
+								<ion-icon name="logo-sass"></ion-icon>
+								<h2 class="heading-4 skill__title">SCSS</h2>
+							</div>
+							<div class="skill__bar skill__bar--4">
+								<div
+									class="skill__bar--fill skill__bar--fill--4"
+									data-percent="90"
+								></div>
+							</div>
+						</div>
+						<div class="skill__container">
+							<div class="skill skill__05">
+								<ion-icon name="logo-figma"></ion-icon>
+								<h2 class="heading-4 skill__title">Figma</h2>
+							</div>
+							<div class="skill__bar skill__bar--5">
+								<div
+									class="skill__bar--fill skill__bar--fill--5"
+									data-percent="40"
+								></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="
+						about__container about__container--02
+						flex flex__ai-center
+					"
+				>
+					<div class="hero__heading--container03">
+						<h1 class="heading-1">
+							About <span class="heading__colour--2">Me</span>
+						</h1>
+						<div class="about__text">
+							<h3 class="heading-4 heading-4--wrapper01">
+								Hi again! It’s me, Ben. I’m a Sydney Based
+								Front-end Developer with an engineering
+								background
+							</h3>
+							<h3 class="heading-4 heading-4--wrapper02">
+								I like to create modern, effective & minimalist
+								design user interfaces with engaging user
+								experiences
+							</h3>
+						</div>
+						<button class="btn btn__02">Find Out More!</button>
+					</div>
+					<div class="hero hero__photo hero__photo--02">
+						<img
+							src="images/IMG_4892-min.JPG"
+							alt="Ben Photo"
+							class="hero__photo--main"
+						/>
+					</div>
+				</div>
+				<div class="about__overlay--text">
+					<a href="#" class="closeAb">
+						<ion-icon
+							name="arrow-back-outline"
+							class="btnClose"
+						></ion-icon>
+					</a>
+					<section class="overlay__section overlay__section--01">
+						<div class="overlay__photo">
+							<img
+								src="images/IMG_4892-min01.JPG"
+								alt="Example photo"
+							/>
+						</div>
+						<h1
+							class="
+								overlay overlay__heading overlay__heading--2
+								heading-1
+							"
+						>
+							Benjamin Lou-Wong
+						</h1>
+						<div class="overlay__container overlay__container--2">
+							<h3 class="heading-3">
+								<span class="heading__colour--1">Full time</span
+								><span class="heading__colour--2">
+									front-end engineering</span
+								>
+								creative making
+								<span class="heading__colour--2"
+									>interactive
+								</span>
+								online experiences
+							</h3>
+							<h3 class="heading-3">
+								<span class="heading__colour--1"
+									>Part time</span
+								>
+								coffee enthusiast
+							</h3>
+							<div
+								class="
+									overlay__btn
+									flex flex__ai-center flex__jc-center
+								"
+							>
+								<a
+									href="files/BENJAMIN LOU-WONG Resume Template.PDF"
+									class="btn btn__overlay btn__overlay--dl"
+									download="BENJAMIN LOU-WONG Resume"
+									>My Curriculum Vitae</a
+								>
+							</div>
+						</div>
+					</section>
+					<!-- <section
+						class="overlay__section overlay__section--02 slide01"
+					>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nisi saepe accusantium nostrum earum nemo rerum
+						cupiditate voluptatum molestiae, iusto quo adipisci
+						dolorum vitae similique optio ducimus id maxime repellat
+						architecto!
+					</section>
+					<section
+						class="overlay__section overlay__section--03 slide01"
+					>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nisi saepe accusantium nostrum earum nemo rerum
+						cupiditate voluptatum molestiae, iusto quo adipisci
+						dolorum vitae similique optio ducimus id maxime repellat
+						architecto!
+					</section> -->
+				</div>
+			</section>
+			<section class="section section04 contact grid" id="section04">
+				<div class="contact__left flex flex__dir-col flex__jc-center">
+					<h1 class="heading-1">
+						<span class="heading__colour--1">Contact</span> Me
+					</h1>
+					<h2 class="heading-4 contact__text">
+						Work inquiries, freelance opportunities, or just want to
+						chat? Find me on my social media below, or send me an
+						email using the form here! Please include your name at
+						the bottom of your message.
+					</h2>
+					<div class="contact__icons flex">
+						<a
+							href="https://www.linkedin.com/in/benjamin-lou-wong-2a316a110/"
+							class="contact__icon linkedin"
+						>
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+						<a
+							href="https://github.com/BenLouWong"
+							class="contact__icon github"
+						>
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+						<a
+							href="https://www.instagram.com/bump.up.the.iso/"
+							class="contact__icon instagram"
+						>
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a>
+						<a
+							href="mailto: blouwong@gmail.com"
+							class="contact__icon mailContact"
+						>
+							<ion-icon name="mail"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<form action="https://formspree.io/f/mjvjqnpz" method="POST">
+					<label>
+						Your email:
+						<input
+							type="email"
+							name="_replyto"
+							class="contact__input contact__input--02"
+							required
+							placeholder="E.g. example@gmail.com"
+						/>
+					</label>
+					<label>
+						Your message:
+						<textarea
+							name="message"
+							class="contact__input contact__input--02"
+							cols="30"
+							rows="5"
+							placeholder="Enter your message here"
+						></textarea>
+					</label>
+					<!-- your other form fields go here -->
+					<button type="submit" class="btn btn__01">Send!</button>
+				</form>
+			</section>
+		</main>
+		<footer class="footer flex flex__dir-col flex__ai-center">
+			@ 2021, Benjamin Lou-Wong
+		</footer>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/canvas.js"></script>
+	</body>
+</html>

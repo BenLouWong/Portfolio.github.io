@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	// scrollbar-color: $colour-background-sidebar $colour-background-cream;
+	scrollbar-width: none;
+}
+
+html {
+	font-size: 112.5%; //18px
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $colour-background-cream;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: "Karla", sans-serif;
+}

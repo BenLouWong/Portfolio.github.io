@@ -1,0 +1,74 @@
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: $font-colour-navy-dark;
+	}
+}
+
+@keyframes moveUp {
+	0%,
+	80% {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+
+	90% {
+		transform: translateY(-0.25rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes spin {
+	0%,
+	100% {
+		transform: translate(0);
+	}
+	25% {
+		transform: translate(160%);
+	}
+	50% {
+		transform: translate(160%, 160%);
+	}
+	75% {
+		transform: translate(0, 160%);
+	}
+}
+
+@keyframes grow {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.moveUp {
+	animation: moveUp 5.5s ease-in-out;
+}
+
+.typing {
+	overflow: hidden;
+	left: 0;
+	border-right: 0.25rem solid;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: typing 3s steps(29, end) 1s 1 normal both,
+		blink 0.75s step-end infinite;
+}

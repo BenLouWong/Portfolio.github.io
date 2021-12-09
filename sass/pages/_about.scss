@@ -1,0 +1,129 @@
+.about {
+	overflow: hidden;
+	position: relative;
+
+	&__container {
+		position: absolute;
+		display: flex;
+		align-items: center;
+
+		width: 102.78rem;
+		height: 117.56rem;
+		top: -33.5rem;
+		border-radius: 50%;
+		box-shadow: -15px 4px 32px rgba(0, 0, 0, 0.15);
+		transition: rotate 0.5s cubic-bezier(0.76, 0.02, 0.15, 0.99),
+			scale 0.5s cubic-bezier(0.76, 0.02, 0.15, 0.99);
+		// opacity: 0;
+		rotate: -90deg;
+		scale: 0.5;
+
+		&--01 {
+			left: 33%;
+			background-color: $font-colour-ochre-dark;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+			// transition: 0s;
+		}
+
+		&--02 {
+			left: 38.5%;
+			background-color: $font-colour-navy-dark;
+		}
+
+		&--active {
+			rotate: 0deg;
+			scale: 1;
+		}
+	}
+	&__text {
+		margin: 1rem 0;
+	}
+
+	&__chevron {
+		display: flex;
+		align-items: center;
+		color: white;
+		position: inherit;
+		top: 50%;
+		font-size: $font-med;
+
+		&::before {
+			content: "Click and hold to drag";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			visibility: hidden;
+			opacity: 0;
+
+			left: -12.5rem;
+			position: absolute;
+			background-color: $colour-background-overlay;
+			border-radius: 32px;
+			padding: 1.5rem;
+			width: 15rem;
+			height: 0rem;
+			font-size: $font-small;
+			transition: all 0.4s ease-in-out;
+		}
+
+		&:hover::before {
+			visibility: visible;
+			opacity: 1;
+			// width: 15rem;
+		}
+	}
+}
+
+.skills {
+	padding-top: 1.5rem;
+	padding-left: 6rem;
+
+	&__title {
+		color: $colour-background-pale;
+		padding-left: 12rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.skill {
+	font-size: $font-med-large;
+	color: $colour-background-pale;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+
+		&:first-child {
+			margin-left: 2rem;
+			// color: #e34c26;
+		}
+
+		&:last-child {
+			margin-left: 6rem;
+		}
+	}
+
+	&__04 {
+		margin-left: 3rem;
+		// color: #c69;
+	}
+
+	&__title {
+		margin-top: 0.5rem;
+		padding-bottom: 0rem;
+	}
+}

@@ -1,0 +1,259 @@
+.overlay {
+	color: white;
+	width: 100vw;
+	&__container {
+		z-index: 11;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		height: 100vh;
+
+		&--2 {
+			// transform: translateY(7rem);
+			width: 35rem;
+		}
+
+		@include respond(phone) {
+			background-image: linear-gradient(
+					rgba($font-colour-navy-light, 0.2),
+					rgba($font-colour-navy-dark, 1)
+				),
+				url(https://images.unsplash.com/photo-1545731939-9c302d5d27ed?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvZmZlZXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			padding: 1rem 2rem;
+		}
+	}
+
+	&__photo {
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		overflow: hidden;
+
+		height: 67rem;
+		width: 67rem;
+		border-radius: 50%;
+
+		right: -12rem;
+		top: -21rem;
+
+		img {
+			filter: opacity(0.6);
+			height: 78rem;
+			width: auto;
+		}
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&__heading {
+		z-index: 10;
+		margin-bottom: 4.5rem;
+		&--2 {
+			display: flex;
+			position: absolute;
+			top: 8rem;
+		}
+	}
+
+	&__heading02 {
+		z-index: 10;
+		margin-bottom: 1.5rem;
+
+		@include respond(phone) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__titles {
+		transform: translateY(13rem);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		z-index: 10;
+		// padding: 1rem 12rem;
+
+		&--box {
+			display: flex;
+			align-items: center;
+		}
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&__box {
+		padding: 0 0.5rem;
+	}
+
+	&__section {
+		background-color: $colour-background-overlay;
+
+		padding: 1rem 12rem;
+
+		width: 100%;
+		height: auto;
+
+		@include respond(small-desktop) {
+			padding: 1rem 9rem;
+		}
+
+		@include respond(tab-landscape) {
+			padding: 1rem 4rem;
+		}
+
+		@include respond(phone) {
+			padding: 0;
+		}
+
+		&--left,
+		&--right {
+			padding: 5rem 1rem;
+			align-self: center;
+			justify-self: center;
+			line-height: 2.67rem;
+
+			& img {
+				height: 80vh;
+				width: auto;
+
+				@include respond(small-desktop) {
+					height: 50vh;
+					width: auto;
+				}
+			}
+
+			@include respond(phone) {
+				padding: 1rem;
+			}
+		}
+
+		&--left {
+			&-coffee {
+				& video {
+					width: auto;
+					height: 100vh;
+				}
+			}
+		}
+
+		&--right {
+			font-size: $font-small-med;
+		}
+
+		&--heading {
+			margin-bottom: 3rem;
+			padding-bottom: 1.5rem;
+
+			&-border01 {
+				border-bottom: 5px solid white;
+			}
+
+			&-border02 {
+				border-bottom: 5px solid $font-colour-navy-dark;
+			}
+		}
+
+		&--02 {
+			background-color: rgba(#000000, 0.55);
+		}
+		&--03,
+		&--04 {
+			background-color: $font-colour-grey-dark;
+			color: #000000;
+		}
+		&--03 {
+			&-images {
+				& img {
+					height: auto;
+					width: 100%;
+				}
+			}
+			&-coffee {
+				background-color: #000000;
+			}
+		}
+
+		&--05 {
+			background-color: $font-colour-ochre-dark;
+		}
+	}
+	&__text {
+		padding-bottom: 4rem;
+		line-height: 2.5rem;
+	}
+}
+
+.dentIntro {
+	background-image: url(../../images/surgery.jpeg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+
+	@include respond(phone) {
+		display: none;
+	}
+}
+
+.coffeeIntro {
+	background-image: url(../../images/coffeeIntro.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+}
+
+.japanIntro {
+	background-image: url(../../images/Hanasaki01.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+}
+
+.role {
+	color: $font-colour-gold-light;
+}
+
+.title {
+	color: $font-colour-ochre-light;
+}
+
+.create {
+	&__icons {
+		font-size: 6rem;
+		padding-top: 3rem;
+	}
+	&__icon {
+		padding: 0 3rem;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.5);
+		}
+		&--mapbox {
+			width: auto;
+			height: 4rem;
+
+			& img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.whiteText {
+	color: white;
+}

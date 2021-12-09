@@ -1,0 +1,110 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+	font-size: $font-button;
+	border-style: none;
+	cursor: pointer;
+
+	height: 3.2rem;
+	width: 9.94rem;
+
+	color: white;
+	margin-top: 0.4rem;
+	box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 0.2rem 0.83rem;
+
+	transition: border-radius 1s ease-in-out;
+
+	&:hover {
+		border-radius: 5rem;
+	}
+
+	@include respond(phone) {
+		height: 2.5rem;
+		width: 7rem;
+		font-size: $font-button-phone;
+	}
+
+	&__01 {
+		background-image: linear-gradient(
+			to right,
+			$font-colour-navy-dark,
+			$font-colour-navy-dark,
+			$font-colour-navy-light
+		);
+		transition: all 0.4s ease-in-out;
+
+		background-size: 200% auto;
+
+		&:hover {
+			background-position: right center;
+			transform: scale(1.05);
+		}
+	}
+
+	&__02 {
+		background-image: linear-gradient(
+			to right,
+			$font-colour-gold-dark,
+			$font-colour-gold-dark,
+			$font-colour-gold-light
+		);
+		transition: all 0.4s ease-in-out;
+		box-shadow: none;
+
+		background-size: 200% auto;
+
+		&:hover {
+			background-position: right center;
+			transform: scale(1.05);
+		}
+	}
+
+	&__overlay {
+		background-color: $font-colour-ochre-dark;
+		transition: all 0.4s ease-in-out;
+		box-shadow: none;
+
+		@include respond(phone) {
+			display: none;
+		}
+
+		&:hover {
+			filter: brightness(1.2);
+			transform: scale(1.05);
+
+			background-color: $font-colour-navy-light;
+		}
+		&--dl {
+			width: 14rem;
+			margin-top: 5rem;
+		}
+	}
+}
+
+.btnClose {
+	z-index: 50;
+	position: fixed;
+	top: 2rem;
+	left: 3rem;
+	color: white;
+	font-size: $font-med;
+	transition: all 0.2s ease-in-out;
+	padding: 0.5rem;
+	border-radius: 50%;
+	// background-color: $font-colour-gold-dark;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: rgba(255, 255, 255, 0.253);
+	}
+
+	@include respond(phone) {
+		top: 1rem;
+		left: 1rem;
+		font-size: $font-small-med;
+	}
+}

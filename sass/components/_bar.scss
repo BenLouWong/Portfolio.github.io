@@ -1,0 +1,26 @@
+.skill {
+	&__bar {
+		background-color: transparent;
+		height: 0.8rem;
+		margin: 1rem;
+		width: 20rem;
+
+		&--fill {
+			height: 0.4rem;
+			width: 0;
+			background: linear-gradient(
+				to right,
+				transparent,
+				$font-colour-gold-light
+			);
+			color: $font-colour-navy-dark;
+			font-weight: 700;
+			margin-left: 1rem;
+			font-size: $font-small-med;
+
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.hero {
+	&__photo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		border-radius: 50%;
+		overflow: hidden;
+
+		&--01 {
+			transform: translate(4.5rem, -5.5rem);
+
+			height: 22vw;
+			width: 22vw;
+			box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.15);
+
+			@include respond(phone) {
+				position: absolute;
+				height: 20rem;
+				width: 20rem;
+				top: 5.5rem;
+				box-shadow: none;
+			}
+		}
+
+		&--02 {
+			transform: translate(4.5rem, -10.5rem);
+
+			height: 17vw; //17rem
+			width: 17vw;
+			z-index: 10;
+		}
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+	&__heading {
+		&--container01 {
+			transform: translate(3.2rem, 6.3rem);
+			z-index: 0;
+			width: 30rem;
+
+			@include respond(phone) {
+				transform: translateY(7.3rem);
+				width: 20rem;
+				padding: 0 1.5rem;
+			}
+		}
+		&--container02 {
+			position: absolute;
+			left: 28%;
+			top: 23.83rem;
+			@include respond(phone) {
+				position: relative;
+				top: 0;
+				left: 0;
+				padding: 5.5rem 1.5rem;
+			}
+		}
+
+		&--container03 {
+			z-index: 9;
+			color: white;
+			line-height: 2rem;
+			transform: translate(13.2rem, 5rem);
+		}
+	}
+}

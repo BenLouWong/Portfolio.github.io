@@ -1,0 +1,81 @@
+.heading-1 {
+	font-size: $font-large;
+	font-weight: 700;
+	// padding-bottom: 1rem;
+
+	@include respond(phone) {
+		font-size: $font-med-large;
+	}
+
+	&--cont {
+		@include respond(phone) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.heading-2 {
+	font-size: $font-med-large;
+	padding-bottom: 1rem;
+
+	@include respond(phone) {
+		font-size: $font-med;
+		padding-bottom: 0.5rem;
+	}
+}
+
+.heading-3 {
+	font-size: $font-med;
+	font-weight: 400;
+	width: 120%;
+	padding-top: 1.5rem;
+}
+
+.heading-4 {
+	font-size: $font-small-med;
+	font-weight: 400;
+
+	&:not(&:last-of-type) {
+		padding-top: 1.5rem;
+	}
+
+	padding-bottom: 1.5rem;
+	&--wrapper01 {
+		width: 31.2vw;
+		overflow: hidden;
+	}
+
+	&--wrapper02 {
+		width: 32.2vw;
+		overflow: hidden;
+	}
+
+	@include respond(phone) {
+		font-size: $font-small;
+		padding-bottom: 1.5rem;
+		width: 80vw;
+	}
+}
+
+.heading__colour {
+	&--1 {
+		color: $font-colour-ochre-dark;
+	}
+
+	&--2 {
+		color: $font-colour-gold-dark;
+	}
+
+	&--3 {
+		color: $font-colour-gold-light;
+	}
+
+	&--4 {
+		color: $font-colour-navy-dark;
+	}
+
+	&--5 {
+		color: $colour-background-pale;
+	}
+}
