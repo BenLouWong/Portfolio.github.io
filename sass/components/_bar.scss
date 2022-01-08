@@ -1,4 +1,11 @@
 .skill {
+	font-size: $font-med-large;
+	color: $colour-background-pale;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	&__bar {
 		background-color: transparent;
 		height: 0.8rem;
@@ -22,5 +29,41 @@
 			justify-content: flex-end;
 			align-items: flex-end;
 		}
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		&:first-child {
+			margin-left: 2rem;
+			// color: #e34c26;
+		}
+
+		&:last-child {
+			margin-left: 4rem;
+		}
+	}
+
+	&__03 {
+		margin-left: -1.5rem;
+	}
+
+	&__04 {
+		margin-left: 0rem;
+		// color: #c69;
+	}
+
+	&__05 {
+		margin-left: 2rem;
+	}
+
+	&__title {
+		margin-top: 0.5rem;
+		padding-bottom: 0rem;
 	}
 }

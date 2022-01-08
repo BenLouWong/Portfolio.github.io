@@ -343,6 +343,24 @@ section {
   color: #e3eaeb;
 }
 
+.skill {
+  font-size: 2.4rem;
+  color: #e3eaeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .skill__bar {
   background-color: transparent;
   height: 0.8rem;
@@ -368,6 +386,47 @@ section {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.skill__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.skill__container:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.skill__container:first-child {
+  margin-left: 2rem;
+}
+
+.skill__container:last-child {
+  margin-left: 4rem;
+}
+
+.skill__03 {
+  margin-left: -1.5rem;
+}
+
+.skill__04 {
+  margin-left: 0rem;
+}
+
+.skill__05 {
+  margin-left: 2rem;
+}
+
+.skill__title {
+  margin-top: 0.5rem;
+  padding-bottom: 0rem;
 }
 
 .workBall {
@@ -1486,57 +1545,6 @@ section {
   color: #e3eaeb;
   padding-left: 12rem;
   margin-bottom: 1.5rem;
-}
-
-.skill {
-  font-size: 2.4rem;
-  color: #e3eaeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skill__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.skill__container:not(:last-child) {
-  margin-bottom: 3rem;
-}
-
-.skill__container:first-child {
-  margin-left: 2rem;
-}
-
-.skill__container:last-child {
-  margin-left: 6rem;
-}
-
-.skill__04 {
-  margin-left: 3rem;
-}
-
-.skill__title {
-  margin-top: 0.5rem;
-  padding-bottom: 0rem;
 }
 
 .contact {
